@@ -1,28 +1,39 @@
-# Employee Attrition Prediction
+📊 Employee Attrition Analysis
+🎯 Goal
 
-## Project Overview
-This project predicts whether an employee is likely to leave the company (attrition) based on historical employee data. The goal is to help HR departments identify at-risk employees and take proactive measures to retain talent.
+The goal of this project is to understand and predict employee turnover using HR analytics datasets. By identifying key factors influencing resignation (such as age, salary, and department), organizations can take proactive measures to improve retention and employee satisfaction.
 
----
-
-## Project Structure
-
-Employee-Attrition-Prediction/
+📂 Project Structure
+Employee-Attrition-Analysis/
+│
 ├── data/
-│ ├── raw/ # Original dataset
-│ │ └── employee_attrition.csv
-│ └── processed/ # Optional: cleaned/processed data
+│   └── raw/
+│       └── employee_attrition.csv
+│
 ├── notebooks/
-│ ├── eda.ipynb # Exploratory Data Analysis (optional)
-│ └── model.ipynb # Model training (optional)
-├── models/ # Saved trained models
-│ ├── logistic_regression_model.pkl
-│ ├── random_forest_model.pkl
-│ ├── scaler.pkl
-│ └── feature_columns.pkl
-├── scripts/ # Python scripts
-│ ├── train.py # Train models
-│ └── predict.py # Predict attrition for new employees
-├── README.md # Project documentation
-├── requirements.txt # Python dependencies
-└── .gitignore # Git ignore file
+│   ├── eda.ipynb        # Exploratory Data Analysis
+│   └── model.ipynb      # Classification Models
+│
+├── dashboard/
+│   └── hr_dashboard.ipynb   # KPI dashboard for HR
+│
+├── README.md
+└── requirements.txt
+
+📊 Dataset
+
+Source: IBM HR Analytics Employee Attrition Dataset (Kaggle)
+
+Example features:
+
+Age
+
+MonthlyIncome
+
+Department
+
+YearsAtCompany
+
+JobSatisfaction
+
+Attrition (Yes/No - Target Variable)
